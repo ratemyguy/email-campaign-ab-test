@@ -1,0 +1,4 @@
+dimension,level,train_customers,train_share,train_mean_spend_control,train_mens_lift,train_mens_ci_low,train_mens_ci_high,train_womens_lift,train_womens_ci_low,train_womens_ci_high,action,action_label,reason
+purchase_history,Mens only,14306,0.4470625,0.4148728274692666,0.7937451946925567,0.2982698552196266,1.2892205341654868,0.6833602630614306,0.1549437953626498,1.2117767307602114,Mens,Mens email,larger training spend lift (+0.79 $/customer vs. +0.68)
+purchase_history,Womens only,14460,0.451875,0.5382582267868371,0.4340229127432109,-0.04921562488670517,0.917261450373127,0.7451106256721792,0.22650243614451526,1.263718815199843,Womens,Womens email,larger training spend lift (+0.75 $/customer vs. +0.43)
+purchase_history,Both,3234,0.1010625,0.7335399061032865,3.355982591601029,1.2488025385154886,5.4631626446865695,1.0377286124152318,-0.23008378370293125,2.305541008533395,Mens,Mens email,larger training spend lift (+3.36 $/customer vs. +1.04)

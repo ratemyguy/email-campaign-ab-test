@@ -1,0 +1,22 @@
+check_name,value,note
+rows,64000.0,one row per customer; the file has no customer ID
+rows_with_any_missing_value,0.0,no imputation needed
+exact_duplicate_rows,6562.0,rows identical to an earlier row in all 12 columns; kept (no ID to tell two look-alike customers apart)
+exact_duplicate_rows_with_history_29.99,6530.0,"most duplicates sit at the $29.99 past-year-spend floor, where identical profiles are expected"
+customers_with_history_exactly_29.99,7947.0,the minimum past-year spend in the file
+history_min_dollars,29.99,"past-year spend, dollars"
+history_max_dollars,3345.93,"past-year spend, dollars"
+history_outside_its_history_segment_band,0.0,history_segment is consistent with history
+customers_buying_neither_mens_nor_womens,0.0,every customer bought men's or women's merchandise (or both) last year
+customers_buying_both_mens_and_womens,6448.0,
+zip_code_spelled_Surburban,28776.0,typo in the source; recoded to Suburban (no row says Suburban)
+buyers_conversion_1,578.0,customers who bought in the two weeks after the send
+spend_positive_but_conversion_0,0.0,spend and conversion agree
+conversion_1_but_spend_0,0.0,spend and conversion agree
+conversion_1_but_no_visit,0.0,every buyer visited
+buyer_spend_min_dollars,29.99,
+buyer_spend_median_dollars,80.795,
+buyer_spend_max_dollars,499.0,no buyer spent more than this
+buyers_at_max_spend,12.0,several buyers sit exactly at the maximum: spend looks top-coded at $499
+buyers_at_29.99,136.0,the most common order value
+highest_buyer_spend_below_max,482.31,gap between the 2nd-highest value and the maximum

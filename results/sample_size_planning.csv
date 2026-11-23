@@ -1,0 +1,14 @@
+question,metric,true_difference,customers_per_group,multiple_of_this_test
+detect a 5% relative lift vs. no email,visit,0.005308363841171501,52867,2.481319816014268
+detect a 10% relative lift vs. no email,visit,0.010616727682343003,13217,0.6203416877874777
+detect a 20% relative lift vs. no email,visit,0.021233455364686005,3305,0.15512062329860132
+detect a 50% relative lift vs. no email,visit,0.05308363841171501,529,0.02482868675490472
+detect a 5% relative lift vs. no email,conversion,0.00028630432741950625,1090351,51.17577208298132
+detect a 10% relative lift vs. no email,conversion,0.0005726086548390125,272588,12.79395475452924
+detect a 20% relative lift vs. no email,conversion,0.001145217309678025,68147,3.19848868863231
+detect a 50% relative lift vs. no email,conversion,0.0028630432741950625,10904,0.5117807190462781
+detect a 5% relative lift vs. no email,spend,0.032639467755561806,1978717,92.87135079320379
+detect a 10% relative lift vs. no email,spend,0.06527893551112361,494680,23.21787289965268
+detect a 20% relative lift vs. no email,spend,0.13055787102224722,123670,5.80446822491317
+detect a 50% relative lift vs. no email,spend,0.3263946775556181,19788,0.9287524640946212
+confirm the observed Mens-vs-Womens spend gap (if it is the true gap),spend,0.34541493995794004,35768,1.6787759316624424

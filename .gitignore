@@ -1,0 +1,16 @@
+# Raw download: re-created by `python -I src/get_data.py` (SHA-256 checked)
+data/raw/
+# Cleaned copy: rebuilt by `python -I src/prepare.py` (the source states no license, so it is not redistributed here)
+data/processed/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

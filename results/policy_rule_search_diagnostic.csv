@@ -1,0 +1,7 @@
+dimension,rule,train_incremental_spend_per_1000,holdout_incremental_spend_per_1000,used_for_decision,shrinkage
+purchase_history,Mens only: Mens; Womens only: Womens; Both: Mens,1030.7145657415356,524.7851380504744,True,0.49085308824279217
+recency_bucket,1-3: Mens; 4-6: Womens; 7-9: Mens; 10-12: Mens,952.3942347493811,668.9328560445358,False,0.29763029674306785
+history_bucket,Under $100: Womens; $100-$199: Mens; $200-$349: Mens; $350+: Mens,1079.7331745104516,515.8193490147912,False,0.5222714637357859
+channel,Phone: Mens; Web: Mens; Multichannel: Mens,892.3118255416837,649.4946083354426,False,0.2721214829343288
+customer_type,Existing customer: Mens; New customer: Womens,1009.5826368570359,303.04294988013925,False,0.6998334372869645
+zip_code,Urban: Womens; Suburban: Mens; Rural: Womens,945.8450534365754,470.75475006145706,False,0.5022918940570175

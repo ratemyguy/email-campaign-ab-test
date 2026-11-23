@@ -1,0 +1,2 @@
+pattern,formula,reference_level,interaction_terms,wald_chi2_hc2,df,p_value,cochran_q,q_matches_wald,p_holm_54_tests
+Womens vs Control lift in visit differs by purchase_history,"visit ~ C(arm, Treatment(reference='Control')) * C(purchase_history, Treatment(reference='Mens only'))",Mens only,2,97.33771869609733,2,7.3010100224283185e-22,97.33771869609524,True,3.9425454121154106e-20

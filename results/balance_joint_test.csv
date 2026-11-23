@@ -1,0 +1,2 @@
+model,lr_chi2,df,p_value,pseudo_r2,converged
+multinomial logit: arm ~ recency + log_history + C(purchase_history) + newbie + C(zip_code) + C(channel),11.441134289343609,18,0.8747086211282094,8.136081421317165e-05,True

@@ -1,0 +1,4 @@
+policy,metric,train_incremental_per_1000,holdout_incremental_per_1000
+Womens email to everyone,spend,747.0770594727311,104.80282124714013
+Mens email to everyone,spend,890.1418054617582,651.6817067703065
+Targeted rule,spend,1030.7145657415356,524.7851380504744

@@ -1,0 +1,302 @@
+token,status,matched_keys,reason,context
+"March 20, 2008",allowlisted,,publication date of the author's post,
+dated March 2008,allowlisted,,date of the source file,
+from 2008,allowlisted,,year the dataset was published,
+Lin (2013),allowlisted,,"citation year (Lin 2013, regression adjustment)",
+SHA-256,allowlisted,,name of the checksum algorithm,
+HC2,allowlisted,,name of the robust standard-error type,
+Python 3.12,allowlisted,,Python version used,
+50/50,allowlisted,,train/holdout split design,
+0.1 threshold,allowlisted,,conventional |SMD| balance threshold,
+95th percentile,allowlisted,,name of a percentile,
+$1.42,matched,spend_mens,,"send, customers who got the Mens email spent $1.42 on average against $0.65"
+$0.65,matched,spend_control,,he Mens email spent $1.42 on average against $0.65 for customers who got no
++$0.77,matched,m_spend_lift;ols_estimate_spend_m;unadj_estimate_spend_m,,inst $0.65 for customers who got no email: **+$0.77 per customer (95% CI $0.
+95,matched,ci_level,,"ers who got no email: **+$0.77 per customer (95% CI $0.49 to $1.06), or "
+$0.49,matched,m_spend_ci;m_spend_welch_ci;ph_both_m_spend_ci,," got no email: **+$0.77 per customer (95% CI $0.49 to $1.06), or about +$77"
+$1.06,matched,m_spend_ci,,"mail: **+$0.77 per customer (95% CI $0.49 to $1.06), or about +$770 per 1,0"
++$770,matched,m_spend_per1000,,"r customer (95% CI $0.49 to $1.06), or about +$770 per 1,000 customers emai"
+"1,000",matched,per_1000,," (95% CI $0.49 to $1.06), or about +$770 per 1,000 customers emailed**. The"
++$0.42,matched,unadj_estimate_spend_w;w_spend_lift,, customers emailed**. The Womens email added +$0.42 per customer (95% CI $0.
+95,matched,ci_level,, The Womens email added +$0.42 per customer (95% CI $0.17 to $0.68). The
+$0.17,matched,breakeven_w_40;mw_conversion_ci;w_spend_ci;w_spend_welch_ci,,mens email added +$0.42 per customer (95% CI $0.17 to $0.68). The Womens em
+$0.68,matched,m_conversion_lift;ols_estimate_conversion_m;ph_mo_m_spend;ph_mo_w_spend_ci;train_mo_womens_lift;unadj_estimate_conversion_m;w_spend_ci;w_spend_welch_ci,,l added +$0.42 per customer (95% CI $0.17 to $0.68). The Womens email worke
++1.1,matched,ph_mo_w_visit,,"only buyers it raised website visits by just +1.1 pts, against +6.9 pts fo"
++6.9,matched,ph_mo_m_visit,,"sed website visits by just +1.1 pts, against +6.9 pts for the Mens email. "
++$420,matched,ho_rule_vs_wall_spend,," everyone"" on customers it was not built on (+$420 per 1,000 customers), bu"
+"1,000",matched,per_1000,," on customers it was not built on (+$420 per 1,000 customers), but it did n"
+−$127,matched,ho_rule_vs_mall_spend,,"beat simply sending everyone the Mens email (−$127 per 1,000, 95% CI −$387 "
+"1,000",matched,per_1000,,"y sending everyone the Mens email (−$127 per 1,000, 95% CI −$387 to +$121),"
+95,matched,ci_level,,"ng everyone the Mens email (−$127 per 1,000, 95% CI −$387 to +$121), and"
+−$387,matched,ho_rule_vs_mall_spend_ci,,"yone the Mens email (−$127 per 1,000, 95% CI −$387 to +$121), and in 500 re"
++$121,matched,ho_rule_vs_mall_spend_ci,,"Mens email (−$127 per 1,000, 95% CI −$387 to +$121), and in 500 re-runs on "
+500,matched,robust_splits,,"27 per 1,000, 95% CI −$387 to +$121), and in 500 re-runs on different ran"
+7,matched,robust_vs_m_pos,,fferent random splits it came out ahead only 7% of the time. **Next cam
+578,matched,buyers_total,,"ge revenue only on much larger tests.** Only 578 of 64,000 customers boug"
+"64,000",matched,rows,,"nue only on much larger tests.** Only 578 of 64,000 customers bought anythin"
+10,matched,het_sig_raw;planning_lift_10,,"00 customers bought anything, so detecting a 10% revenue lift would take"
+"494,680",matched,n_for_10pct_spend,,", so detecting a 10% revenue lift would take 494,680 customers per group.  ##"
+"1,000",matched,per_1000,,"gainst sending no email, and by how much per 1,000 customers? - Which email"
+"64,000",matched,rows,,"]. - **Design, as the author describes it:** 64,000 customers who last purch"
+"64,000",matched,rows,,"te, bought, dollars spent in the two weeks). 64,000 rows, twelve columns, no"
+"28,776",matched,surburban_rows,," ""Suburban"" is misspelled ""Surburban"" in all 28,776 suburban rows; recoded. "
+578,matched,buyers_total,,itive exactly when the customer bought. Only 578 customers (0.9%) bought 
+0.9,matched,buyers_share;ho_rule_vs_mall_conversion;ho_rule_vs_mall_conversion_ci;ph_mo_m_conversion_ci,,hen the customer bought. Only 578 customers (0.9%) bought anything.   - S
+$499,matched,spend_max,,"ught anything.   - Spend tops out at exactly $499 for 12 buyers, and the n"
+12,matched,balance_covariates;buyers_at_spend_max,,"hing.   - Spend tops out at exactly $499 for 12 buyers, and the next-hig"
+$482.31,matched,spend_second_highest,,"for 12 buyers, and the next-highest order is $482.31, so the field looks capp"
+"6,562",matched,duplicate_rows,," so, the largest orders are understated.   - 6,562 rows repeat another row "
+"6,530",matched,duplicate_rows_at_floor,,"ws repeat another row in all twelve columns; 6,530 of those sit at the $29."
+$29.99,matched,history_floor,,"ll twelve columns; 6,530 of those sit at the $29.99 past-year-spend floor, w"
+"10,000",matched,challenge_best_customers;n_boot,,"ch's t-test, bootstrap confidence intervals (10,000 resamples), relative-lif"
+9,matched,halfwidth_visit_mens;ho_rule_vs_mall_visit_ci;holm_family_size;holm_significant;subgroups_ci_excl0_w_spend,,", and a Holm correction across the family of 9 tests. **Power analysis*"
+19,matched,subgroup_levels;subgroups_ci_excl0_m_conversion;subgroups_ci_excl0_m_visit;subgroups_ci_excl0_w_visit,,imator. **Heterogeneous treatment effects**: 19 subgroups defined up fro
+500,matched,robust_splits,,"luation on the holdout with bootstrap CIs, a 500-split robustness check, "
+"21,306",matched,n_control,," The randomization was clean  Group sizes of 21,306 (no email), 21,307 (Mens"
+"21,307",matched,n_mens,,"was clean  Group sizes of 21,306 (no email), 21,307 (Mens) and 21,387 (Women"
+"21,387",matched,n_womens,,"izes of 21,306 (no email), 21,307 (Mens) and 21,387 (Womens) match a one-thi"
+0.90,matched,srm_p,, match a one-third split (SRM chi-square p = 0.90). Every pre-email trait 
+0.017,matched,max_abs_smd,,"lanced (largest standardized mean difference 0.017, against the usual  ), a"
+0.87,matched,joint_lr_p,, finds no trait that predicts the group (p = 0.87). Differences between th
+10.62,matched,visit_rate_control,, | |---|---|---|---| | Visited the website | 10.62% | 18.28% | 15.14% | | B
+18.28,matched,visit_rate_mens,,--|---|---| | Visited the website | 10.62% | 18.28% | 15.14% | | Bought | 0
+15.14,matched,visit_rate_womens,,-| | Visited the website | 10.62% | 18.28% | 15.14% | | Bought | 0.57% | 1.
+0.57,matched,conv_rate_control,,site | 10.62% | 18.28% | 15.14% | | Bought | 0.57% | 1.25% | 0.88% | | Spe
+1.25,matched,conv_rate_mens,,0.62% | 18.28% | 15.14% | | Bought | 0.57% | 1.25% | 0.88% | | Spend per c
+0.88,matched,conv_rate_womens;ph_mo_mw_spend_ci,,18.28% | 15.14% | | Bought | 0.57% | 1.25% | 0.88% | | Spend per customer 
+$0.65,matched,spend_control,,57% | 1.25% | 0.88% | | Spend per customer | $0.65 | $1.42 | $1.08 |  | Eff
+$1.42,matched,spend_mens,,25% | 0.88% | | Spend per customer | $0.65 | $1.42 | $1.08 |  | Effect (95%
+$1.08,matched,spend_womens,,88% | | Spend per customer | $0.65 | $1.42 | $1.08 |  | Effect (95% CI) | M
+95,matched,ci_level,,ustomer | $0.65 | $1.42 | $1.08 |  | Effect (95% CI) | Mens vs. no email
++7.66,matched,m_visit_lift;unadj_estimate_visit_m,,"s. Womens | |---|---|---|---| | Visit rate | +7.66 pts (7.00 to 8.32), +72%"
+7.00,matched,m_visit_ci,," |---|---|---|---| | Visit rate | +7.66 pts (7.00 to 8.32), +72% | +4.52 p"
+8.32,matched,m_visit_ci,,"-|---|---| | Visit rate | +7.66 pts (7.00 to 8.32), +72% | +4.52 pts (3.89"
++72,matched,m_visit_rel,,"--| | Visit rate | +7.66 pts (7.00 to 8.32), +72% | +4.52 pts (3.89 to 5."
++4.52,matched,unadj_estimate_visit_w;w_visit_lift,,"isit rate | +7.66 pts (7.00 to 8.32), +72% | +4.52 pts (3.89 to 5.16), +43%"
+3.89,matched,w_visit_ci,," +7.66 pts (7.00 to 8.32), +72% | +4.52 pts (3.89 to 5.16), +43% | +3.14 p"
+5.16,matched,w_visit_ci,,"ts (7.00 to 8.32), +72% | +4.52 pts (3.89 to 5.16), +43% | +3.14 pts (2.43"
++43,matched,ho_mall_vs_wall_visit_ci;ho_rule_vs_wall_visit_ci;w_visit_rel,,"0 to 8.32), +72% | +4.52 pts (3.89 to 5.16), +43% | +3.14 pts (2.43 to 3."
++3.14,matched,mw_visit_lift,,"32), +72% | +4.52 pts (3.89 to 5.16), +43% | +3.14 pts (2.43 to 3.84) | | C"
+2.43,matched,mw_visit_ci,," +4.52 pts (3.89 to 5.16), +43% | +3.14 pts (2.43 to 3.84) | | Conversion "
+3.84,matched,mw_visit_ci,,"ts (3.89 to 5.16), +43% | +3.14 pts (2.43 to 3.84) | | Conversion rate | +"
++0.68,matched,m_conversion_lift;ols_estimate_conversion_m;ph_mo_m_spend;ph_mo_w_spend_ci;train_mo_womens_lift;unadj_estimate_conversion_m;w_spend_ci;w_spend_welch_ci,,".14 pts (2.43 to 3.84) | | Conversion rate | +0.68 pts (0.50 to 0.86), +119"
+0.50,matched,m_conversion_ci,,"43 to 3.84) | | Conversion rate | +0.68 pts (0.50 to 0.86), +119% | +0.31 "
+0.86,matched,m_conversion_ci,,"84) | | Conversion rate | +0.68 pts (0.50 to 0.86), +119% | +0.31 pts (0.1"
++119,matched,m_conversion_rel,," Conversion rate | +0.68 pts (0.50 to 0.86), +119% | +0.31 pts (0.15 to 0."
++0.31,matched,breakeven_m_40;ols_estimate_conversion_w;unadj_estimate_conversion_w;w_conversion_lift,,"ion rate | +0.68 pts (0.50 to 0.86), +119% | +0.31 pts (0.15 to 0.47), +54%"
+0.15,matched,breakeven_m_30_cilow;w_conversion_ci,,"+0.68 pts (0.50 to 0.86), +119% | +0.31 pts (0.15 to 0.47), +54% | +0.37 p"
+0.47,matched,w_conversion_ci,,"s (0.50 to 0.86), +119% | +0.31 pts (0.15 to 0.47), +54% | +0.37 pts (0.17"
++54,matched,het_tests;w_conversion_rel,," to 0.86), +119% | +0.31 pts (0.15 to 0.47), +54% | +0.37 pts (0.17 to 0."
++0.37,matched,mw_conversion_lift,,"6), +119% | +0.31 pts (0.15 to 0.47), +54% | +0.37 pts (0.17 to 0.56) | | S"
+0.17,matched,breakeven_w_40;mw_conversion_ci;w_spend_ci;w_spend_welch_ci,," +0.31 pts (0.15 to 0.47), +54% | +0.37 pts (0.17 to 0.56) | | Spend per c"
+0.56,matched,mw_conversion_ci,,"ts (0.15 to 0.47), +54% | +0.37 pts (0.17 to 0.56) | | Spend per customer "
++$0.77,matched,m_spend_lift;ols_estimate_spend_m;unadj_estimate_spend_m,," pts (0.17 to 0.56) | | Spend per customer | +$0.77 ($0.49 to $1.06), +118% "
+$0.49,matched,m_spend_ci;m_spend_welch_ci;ph_both_m_spend_ci,,"17 to 0.56) | | Spend per customer | +$0.77 ($0.49 to $1.06), +118% | +$0.4"
+$1.06,matched,m_spend_ci,,"6) | | Spend per customer | +$0.77 ($0.49 to $1.06), +118% | +$0.42 ($0.17 "
++118,matched,m_spend_rel,,"pend per customer | +$0.77 ($0.49 to $1.06), +118% | +$0.42 ($0.17 to $0.6"
++$0.42,matched,unadj_estimate_spend_w;w_spend_lift,," customer | +$0.77 ($0.49 to $1.06), +118% | +$0.42 ($0.17 to $0.68), +65% |"
+$0.17,matched,breakeven_w_40;mw_conversion_ci;w_spend_ci;w_spend_welch_ci,,"r | +$0.77 ($0.49 to $1.06), +118% | +$0.42 ($0.17 to $0.68), +65% | +$0.35"
+$0.68,matched,m_conversion_lift;ols_estimate_conversion_m;ph_mo_m_spend;ph_mo_w_spend_ci;train_mo_womens_lift;unadj_estimate_conversion_m;w_spend_ci;w_spend_welch_ci,,"7 ($0.49 to $1.06), +118% | +$0.42 ($0.17 to $0.68), +65% | +$0.35 ($0.04 t"
++65,matched,w_spend_rel,," to $1.06), +118% | +$0.42 ($0.17 to $0.68), +65% | +$0.35 ($0.04 to $0.6"
++$0.35,matched,mw_spend_lift,,"06), +118% | +$0.42 ($0.17 to $0.68), +65% | +$0.35 ($0.04 to $0.66) | | Hol"
+$0.04,matched,het_hist_w_spend_p;mw_spend_ci,,"8% | +$0.42 ($0.17 to $0.68), +65% | +$0.35 ($0.04 to $0.66) | | Holm-adjus"
+$0.66,matched,mw_spend_ci;mw_spend_welch_ci,,"42 ($0.17 to $0.68), +65% | +$0.35 ($0.04 to $0.66) | | Holm-adjusted p: vi"
+0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,,Holm-adjusted p: visits / buyers / spend | < 0.001 / < 0.001 / < 0.001 | < 
+0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,,ted p: visits / buyers / spend | < 0.001 / < 0.001 / < 0.001 | < 0.001 / < 
+0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,,its / buyers / spend | < 0.001 / < 0.001 / < 0.001 | < 0.001 / < 0.001 / 0.
+0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,,rs / spend | < 0.001 / < 0.001 / < 0.001 | < 0.001 / < 0.001 / 0.002 | < 0.
+0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,, | < 0.001 / < 0.001 / < 0.001 | < 0.001 / < 0.001 / 0.002 | < 0.001 / < 0.
+0.002,matched,w_spend_holm_p,,01 / < 0.001 / < 0.001 | < 0.001 / < 0.001 / 0.002 | < 0.001 / < 0.001 / 0.
+0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,,01 / < 0.001 | < 0.001 / < 0.001 / 0.002 | < 0.001 / < 0.001 / 0.03 |  Per 
+0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,,"01 | < 0.001 / < 0.001 / 0.002 | < 0.001 / < 0.001 / 0.03 |  Per 1,000 cust"
+0.03,matched,mw_spend_holm_p;mw_spend_welch_ci,,".001 / < 0.001 / 0.002 | < 0.001 / < 0.001 / 0.03 |  Per 1,000 customers e"
+"1,000",matched,per_1000,,"01 / 0.002 | < 0.001 / < 0.001 / 0.03 |  Per 1,000 customers emailed, the M"
++77,matched,m_conversion_rel_ci;m_visit_per1000,,"0 customers emailed, the Mens email produced +77 visits, +6.8 buyers and "
++6.8,matched,m_conversion_per1000;ph_mo_mw_visit_ci,,"emailed, the Mens email produced +77 visits, +6.8 buyers and +$770 of spen"
++$770,matched,m_spend_per1000,,"s email produced +77 visits, +6.8 buyers and +$770 of spend; the Womens ema"
++45,matched,w_visit_per1000,," buyers and +$770 of spend; the Womens email +45 visits, +3.1 buyers and "
++3.1,matched,w_conversion_per1000,,"+$770 of spend; the Womens email +45 visits, +3.1 buyers and +$424. All 9 "
++$424,matched,w_spend_per1000,,"the Womens email +45 visits, +3.1 buyers and +$424. All 9 comparisons stay "
+9,matched,halfwidth_visit_mens;ho_rule_vs_mall_visit_ci;holm_family_size;holm_significant;subgroups_ci_excl0_w_spend,,"email +45 visits, +3.1 buyers and +$424. All 9 comparisons stay signifi"
++$0.35,matched,mw_spend_lift,,e Womens email is real but loosely measured: +$0.35 per customer with a CI f
+$0.04,matched,het_hist_w_spend_p;mw_spend_ci,,measured: +$0.35 per customer with a CI from $0.04 to $0.66 (Holm p = 0.03)
+$0.66,matched,mw_spend_ci;mw_spend_welch_ci,, +$0.35 per customer with a CI from $0.04 to $0.66 (Holm p = 0.03). Spend C
+0.03,matched,mw_spend_holm_p;mw_spend_welch_ci,,omer with a CI from $0.04 to $0.66 (Holm p = 0.03). Spend CIs are bootstra
+578,matched,buyers_total,,"ils created buyers, not bigger baskets  Only 578 of 64,000 customers boug"
+"64,000",matched,rows,,"ated buyers, not bigger baskets  Only 578 of 64,000 customers bought anythin"
+122,matched,buyers_control;spend_per_buyer_womens,,"nly 578 of 64,000 customers bought anything: 122 in the no-email group, 2"
+267,matched,buyers_mens,," bought anything: 122 in the no-email group, 267 with the Mens email and "
+189,matched,buyers_womens,," no-email group, 267 with the Mens email and 189 with the Womens email. T"
+95,matched,ci_level,,e Womens email. That is why the spend lift's 95% CI spans ±38% of the es
+38,matched,halfwidth_spend_mens,,". That is why the spend lift's 95% CI spans ±38% of the estimate, agains"
+9,matched,halfwidth_visit_mens;ho_rule_vs_mall_visit_ci;holm_family_size;holm_significant;subgroups_ci_excl0_w_spend,," 95% CI spans ±38% of the estimate, against ±9% for visits; measuring a"
+37,matched,cv_multiplier_spend,,precision as the visit rate would take about 37× as many customers. Buye
+$114,matched,spend_per_buyer_control;spend_per_buyer_mens,," Buyers spent about the same in every group ($114, $114 and $122; neither "
+$114,matched,spend_per_buyer_control;spend_per_buyer_mens,,"s spent about the same in every group ($114, $114 and $122; neither email'"
+$122,matched,buyers_control;spend_per_buyer_womens,,"bout the same in every group ($114, $114 and $122; neither email's differe"
+0.97,matched,ph_wo_w_spend_ci;spend_per_buyer_p_mens,," difference from control is significant, p = 0.97 and 0.51), so more buyer"
+0.51,matched,spend_per_buyer_p_womens,,"ce from control is significant, p = 0.97 and 0.51), so more buyers account"
+101,matched,share_more_buyers_mens,,"= 0.97 and 0.51), so more buyers account for 101% of the Mens spend lift "
+84,matched,share_more_buyers_womens,,ns buyers spent slightly less per order) and 84% of the Womens lift. Spe
+80,matched,power,," sample size the test could reliably detect (80% power, two-sided α = 0."
+0.05,matched,alpha;breakeven_w_30_cilow;max_estimate_move_visit,,"ld reliably detect (80% power, two-sided α = 0.05) a relative lift of 8% i"
+8,matched,mde_design_visit,,"ower, two-sided α = 0.05) a relative lift of 8% in visits and 36% in pu"
+36,matched,mde_design_conversion;w_visit_rel_ci,," = 0.05) a relative lift of 8% in visits and 36% in purchases, but only "
+48,matched,mde_design_spend;profit_w_30_0.1_cilow,," 8% in visits and 36% in purchases, but only 48% in spend per customer. "
+9.2,matched,obs_over_mde_visit,,er customer. The Mens email's visit lift was 9.2× its MDE; its spend lift
+2.4,matched,obs_over_mde_spend,,t lift was 9.2× its MDE; its spend lift only 2.4×. Detecting a 10% spend 
+10,matched,het_sig_raw;planning_lift_10,,s MDE; its spend lift only 2.4×. Detecting a 10% spend lift would need 4
+"494,680",matched,n_for_10pct_spend,," 2.4×. Detecting a 10% spend lift would need 494,680 customers per group (23×"
+23,matched,ho_mall_vs_wall_visit_ci;ho_wall_vs_mall_visit_ci;mult_for_10pct_spend;w_conversion_rel_ci;w_spend_rel_ci,,"lift would need 494,680 customers per group (23× this test), against 13,"
+"13,217",matched,n_for_10pct_visit,,"customers per group (23× this test), against 13,217 per group for a 10% visi"
+10,matched,het_sig_raw;planning_lift_10,,"× this test), against 13,217 per group for a 10% visit lift. Confirming "
+80,matched,power,,"Confirming the Mens-vs-Womens spend gap with 80% power would need 35,768"
+"35,768",matched,n_confirm_mw_spend,,"s-Womens spend gap with 80% power would need 35,768 per group (1.7× this tes"
+1.7,matched,mult_confirm_mw_spend,," with 80% power would need 35,768 per group (1.7× this test).  ![Power an"
++7.66,matched,m_visit_lift;unadj_estimate_visit_m,,"n SE | |---|---|---|---| | Visit rate, pts | +7.66 pts (0.339) | +7.61 pts "
+0.339,matched,unadj_se_visit_m,,"|---|---|---| | Visit rate, pts | +7.66 pts (0.339) | +7.61 pts (0.334) | −"
++7.61,matched,ols_estimate_visit_m,,"---| | Visit rate, pts | +7.66 pts (0.339) | +7.61 pts (0.334) | −1.4% | | "
+0.334,matched,ols_se_visit_m,,"t rate, pts | +7.66 pts (0.339) | +7.61 pts (0.334) | −1.4% | | Spend per c"
+−1.4,matched,ols_se_change_visit_m;ph_wo_mw_visit_ci,,"ts | +7.66 pts (0.339) | +7.61 pts (0.334) | −1.4% | | Spend per customer,"
++$0.77,matched,m_spend_lift;ols_estimate_spend_m;unadj_estimate_spend_m,," (0.334) | −1.4% | | Spend per customer, $ | +$0.77 (0.1452) | +$0.77 (0.145"
+0.1452,matched,unadj_se_spend_m,," | −1.4% | | Spend per customer, $ | +$0.77 (0.1452) | +$0.77 (0.1451) | −0."
++$0.77,matched,m_spend_lift;ols_estimate_spend_m;unadj_estimate_spend_m,," | Spend per customer, $ | +$0.77 (0.1452) | +$0.77 (0.1451) | −0.1% |  Addi"
+0.1451,matched,ols_se_spend_m,," per customer, $ | +$0.77 (0.1452) | +$0.77 (0.1451) | −0.1% |  Adding the p"
+−0.1,matched,ols_extra_sample_spend_w;ols_se_change_conversion_m;ols_se_change_conversion_w;ols_se_change_spend_m;ph_both_w_conversion_ci,,"mer, $ | +$0.77 (0.1452) | +$0.77 (0.1451) | −0.1% |  Adding the pre-email"
+0.05,matched,alpha;breakeven_w_30_cilow;max_estimate_move_visit,, covariates moved every effect estimate by < 0.05 pts for visits and < $0.
+$0.01,matched,cost_0.01;max_estimate_move_spend,,"fect estimate by < 0.05 pts for visits and < $0.01 for spend, and shrank th"
+1.4,matched,ols_se_change_visit_m;ph_wo_mw_visit_ci,,"pend, and shrank the visit standard error by 1.4%, worth about 2.9% more "
+2.9,matched,ols_extra_sample_visit_m,,"he visit standard error by 1.4%, worth about 2.9% more customers. Convers"
+0.1,matched,max_se_change_conv_spend;ols_extra_sample_conversion_w;ols_extra_sample_spend_w;ols_r2_spend;ols_se_change_conversion_m;ols_se_change_conversion_w;ols_se_change_spend_m;ols_se_change_spend_w;partial_r2_spend;ph_both_mw_conversion_ci;ph_both_w_conversion_ci;ph_mo_w_conversion;ph_wo_mw_conversion,,version and spend standard errors changed by 0.1% or less. Of the varianc
+2.6,matched,ho_rule_vs_wall_conversion_ci;ols_extra_sample_visit_w;partial_r2_visit,,"he group effect, the covariates explain only 2.6% for visits and 0.1% for"
+0.1,matched,max_se_change_conv_spend;ols_extra_sample_conversion_w;ols_extra_sample_spend_w;ols_r2_spend;ols_se_change_conversion_m;ols_se_change_conversion_w;ols_se_change_spend_m;ols_se_change_spend_w;partial_r2_spend;ph_both_mw_conversion_ci;ph_both_w_conversion_ci;ph_mo_w_conversion;ph_wo_mw_conversion,," covariates explain only 2.6% for visits and 0.1% for spend, and CUPED wi"
+0.065,matched,cuped_corr_visit,,"es even less: its correlation with visits is 0.065 and with spend 0.022, an"
+0.022,matched,cuped_corr_spend,,"relation with visits is 0.065 and with spend 0.022, and CUPED cuts variance"
+54,matched,het_tests;w_conversion_rel,,"ustomers who buy women's merchandise  Of the 54 tests of ""does the effec"
+3,matched,het_sig_holm;mw_spend_rel_ci;robust_vs_m_p95,,"s × three comparisons × three metrics), only 3 survive the Holm correct"
++7.4,matched,ph_wo_w_visit,,nd visits. The Womens email raised visits by +7.4 pts among women's-only b
++7.1,matched,ph_both_w_visit;ph_wo_m_visit,,ts by +7.4 pts among women's-only buyers and +7.1 pts among customers who 
++1.1,matched,ph_mo_w_visit,,"ts among customers who bought both, but only +1.1 pts (95% CI +0.2 pts to "
+95,matched,ci_level,,"ustomers who bought both, but only +1.1 pts (95% CI +0.2 pts to +2.0 pts"
++0.2,matched,ols_extra_sample_conversion_m;ols_extra_sample_spend_m;partial_r2_conversion;ph_mo_w_visit_ci,,"s who bought both, but only +1.1 pts (95% CI +0.2 pts to +2.0 pts) among m"
++2.0,matched,ph_mo_w_visit_ci,," both, but only +1.1 pts (95% CI +0.2 pts to +2.0 pts) among men's-only bu"
++6.3,matched,interaction_w_wo_coef;ph_both_mw_visit,,etween women's-only and men's-only buyers at +6.3 pts (95% CI 5.0 to 7.6; 
+95,matched,ci_level,,en's-only and men's-only buyers at +6.3 pts (95% CI 5.0 to 7.6; Wald χ² 
+5.0,matched,interaction_w_wo_ci,,"ly and men's-only buyers at +6.3 pts (95% CI 5.0 to 7.6; Wald χ² = 97.3, "
+7.6,matched,interaction_w_wo_ci,,"men's-only buyers at +6.3 pts (95% CI 5.0 to 7.6; Wald χ² = 97.3, p < 0.0"
+97.3,matched,interaction_chi2,,"rs at +6.3 pts (95% CI 5.0 to 7.6; Wald χ² = 97.3, p < 0.001). The Mens em"
+0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,," pts (95% CI 5.0 to 7.6; Wald χ² = 97.3, p < 0.001). The Mens email lifted "
+19,matched,subgroup_levels;subgroups_ci_excl0_m_conversion;subgroups_ci_excl0_m_visit;subgroups_ci_excl0_w_visit,, 0.001). The Mens email lifted visits in all 19 subgroups (+6.9 pts for 
++6.9,matched,ph_mo_m_visit,,"ens email lifted visits in all 19 subgroups (+6.9 pts for men's-only, +7.1"
++7.1,matched,ph_both_w_visit;ph_wo_m_visit,,"n all 19 subgroups (+6.9 pts for men's-only, +7.1 pts for women's-only and"
++13.4,matched,ph_both_m_visit,,"or men's-only, +7.1 pts for women's-only and +13.4 pts for buyers of both) "
+18,matched,joint_lr_df;mw_conversion_rel_ci;subgroups_ci_excl0_m_spend,,th) and lifted spend with a CI above zero in 18 of 19. No difference in 
+19,matched,subgroup_levels;subgroups_ci_excl0_m_conversion;subgroups_ci_excl0_m_visit;subgroups_ci_excl0_w_visit,,d lifted spend with a CI above zero in 18 of 19. No difference in spend 
+−$0.32,matched,w_spend_hist_low,,"e, the Womens email's spend lift ranges from −$0.32 to +$0.70 across past-sp"
++$0.70,matched,w_spend_hist_high,,ens email's spend lift ranges from −$0.32 to +$0.70 across past-spend bands 
+0.04,matched,het_hist_w_spend_p;mw_spend_ci,,"2 to +$0.70 across past-spend bands (raw p = 0.04, Holm p = 1.00): the kin"
+1.00,matched,het_hist_w_spend_p_holm,,"oss past-spend bands (raw p = 0.04, Holm p = 1.00): the kind of swing that"
+19,matched,subgroup_levels;subgroups_ci_excl0_m_conversion;subgroups_ci_excl0_m_visit;subgroups_ci_excl0_w_visit,,he kind of swing that slicing a noisy metric 19 ways produces by chance.
+"32,000",matched,holdout_size;train_size,,"rs  On a random half of customers (training, 32,000) the rule picked the ema"
++$0.79,matched,train_mo_mens_lift,,group: the Mens email for men's-only buyers (+$0.79 against +$0.68 for Women
++$0.68,matched,m_conversion_lift;ols_estimate_conversion_m;ph_mo_m_spend;ph_mo_w_spend_ci;train_mo_womens_lift;unadj_estimate_conversion_m;w_spend_ci;w_spend_welch_ci,, email for men's-only buyers (+$0.79 against +$0.68 for Womens) and for buye
++$3.36,matched,train_both_mens_lift,,"t +$0.68 for Womens) and for buyers of both (+$3.36 against +$1.04), and the"
++$1.04,matched,train_both_womens_lift,,"mens) and for buyers of both (+$3.36 against +$1.04), and the Womens email f"
++$0.75,matched,train_wo_womens_lift,,nd the Womens email for women's-only buyers (+$0.75 against +$0.43). Scored 
++$0.43,matched,ols_estimate_spend_w;train_wo_mens_lift,,mail for women's-only buyers (+$0.75 against +$0.43). Scored on the other 32
+"32,000",matched,holdout_size;train_size,,"(+$0.75 against +$0.43). Scored on the other 32,000 customers:  | Holdout ha"
+"1,000",matched,per_1000,,"other 32,000 customers:  | Holdout half, per 1,000 customers (95% CI) | Tar"
+95,matched,ci_level,,"omers:  | Holdout half, per 1,000 customers (95% CI) | Targeted rule vs."
++78,matched,ho_rule_vs_none_visit,,veryone | |---|---|---|---| | Extra visits | +78 (+68 to +87) | +35 (+28 
++68,matched,ho_rule_vs_none_visit_ci,,ne | |---|---|---|---| | Extra visits | +78 (+68 to +87) | +35 (+28 to +4
++87,matched,ho_rule_vs_none_visit_ci,,--|---|---|---| | Extra visits | +78 (+68 to +87) | +35 (+28 to +43) | +2
++35,matched,ho_rule_vs_wall_visit,,---|---| | Extra visits | +78 (+68 to +87) | +35 (+28 to +43) | +2 (−4 to
++28,matched,ho_rule_vs_wall_visit_ci,,--| | Extra visits | +78 (+68 to +87) | +35 (+28 to +43) | +2 (−4 to +9) 
++43,matched,ho_mall_vs_wall_visit_ci;ho_rule_vs_wall_visit_ci;w_visit_rel,,xtra visits | +78 (+68 to +87) | +35 (+28 to +43) | +2 (−4 to +9) | | Ext
++2,matched,ho_rule_vs_mall_visit,,sits | +78 (+68 to +87) | +35 (+28 to +43) | +2 (−4 to +9) | | Extra buy
+−4,matched,ho_rule_vs_mall_visit_ci,, | +78 (+68 to +87) | +35 (+28 to +43) | +2 (−4 to +9) | | Extra buyers 
++9,matched,halfwidth_visit_mens;ho_rule_vs_mall_visit_ci;holm_family_size;holm_significant;subgroups_ci_excl0_w_spend,, (+68 to +87) | +35 (+28 to +43) | +2 (−4 to +9) | | Extra buyers | +6.4
++6.4,matched,ho_rule_vs_none_conversion;ph_wo_w_visit_ci,,8 to +43) | +2 (−4 to +9) | | Extra buyers | +6.4 (+3.8 to +8.9) | +4.6 (+
++3.8,matched,ho_rule_vs_none_conversion_ci,,43) | +2 (−4 to +9) | | Extra buyers | +6.4 (+3.8 to +8.9) | +4.6 (+2.6 to
++8.9,matched,ho_rule_vs_none_conversion_ci,, (−4 to +9) | | Extra buyers | +6.4 (+3.8 to +8.9) | +4.6 (+2.6 to +6.6) |
++4.6,matched,ho_rule_vs_wall_conversion;ph_both_w_visit_ci,,+9) | | Extra buyers | +6.4 (+3.8 to +8.9) | +4.6 (+2.6 to +6.6) | −0.9 (−
++2.6,matched,ho_rule_vs_wall_conversion_ci;ols_extra_sample_visit_w;partial_r2_visit,,| Extra buyers | +6.4 (+3.8 to +8.9) | +4.6 (+2.6 to +6.6) | −0.9 (−2.8 to
++6.6,matched,ho_rule_vs_wall_conversion_ci,,buyers | +6.4 (+3.8 to +8.9) | +4.6 (+2.6 to +6.6) | −0.9 (−2.8 to +0.9) |
+−0.9,matched,ho_rule_vs_mall_conversion,, +6.4 (+3.8 to +8.9) | +4.6 (+2.6 to +6.6) | −0.9 (−2.8 to +0.9) | | Extra
+−2.8,matched,ho_rule_vs_mall_conversion_ci;ho_wall_vs_mall_conversion_ci,,(+3.8 to +8.9) | +4.6 (+2.6 to +6.6) | −0.9 (−2.8 to +0.9) | | Extra spend
++0.9,matched,buyers_share;ho_rule_vs_mall_conversion_ci;ph_mo_m_conversion_ci,, +8.9) | +4.6 (+2.6 to +6.6) | −0.9 (−2.8 to +0.9) | | Extra spend | +$525
++$525,matched,ho_rule_vs_none_spend;holdout_value_rule,,6.6) | −0.9 (−2.8 to +0.9) | | Extra spend | +$525 (+$124 to +$930) | +$420
++$124,matched,ho_rule_vs_none_spend_ci,,−0.9 (−2.8 to +0.9) | | Extra spend | +$525 (+$124 to +$930) | +$420 (+$100
++$930,matched,ho_rule_vs_none_spend_ci,,8 to +0.9) | | Extra spend | +$525 (+$124 to +$930) | +$420 (+$100 to +$760
++$420,matched,ho_rule_vs_wall_spend,,) | | Extra spend | +$525 (+$124 to +$930) | +$420 (+$100 to +$760) | −$127
++$100,matched,ho_rule_vs_wall_spend_ci,,xtra spend | +$525 (+$124 to +$930) | +$420 (+$100 to +$760) | −$127 (−$387
++$760,matched,ho_rule_vs_wall_spend_ci,,d | +$525 (+$124 to +$930) | +$420 (+$100 to +$760) | −$127 (−$387 to +$121
+−$127,matched,ho_rule_vs_mall_spend,, (+$124 to +$930) | +$420 (+$100 to +$760) | −$127 (−$387 to +$121) |  On t
+−$387,matched,ho_rule_vs_mall_spend_ci,, to +$930) | +$420 (+$100 to +$760) | −$127 (−$387 to +$121) |  On the same
++$121,matched,ho_rule_vs_mall_spend_ci,,") | +$420 (+$100 to +$760) | −$127 (−$387 to +$121) |  On the same holdout,"
++$652,matched,ho_mall_vs_none_spend;holdout_value_mall,,"ame holdout, ""Mens email to everyone"" earned +$652 per 1,000 against no ema"
+"1,000",matched,per_1000,,"t, ""Mens email to everyone"" earned +$652 per 1,000 against no email (+$235 "
++$235,matched,ho_mall_vs_none_spend_ci,,"ne"" earned +$652 per 1,000 against no email (+$235 to +$1,069) and +$547 ag"
+"+$1,069",matched,ho_mall_vs_none_spend_ci,,"d +$652 per 1,000 against no email (+$235 to +$1,069) and +$547 against ""Wome"
++$547,matched,ho_mall_vs_wall_spend,,",000 against no email (+$235 to +$1,069) and +$547 against ""Womens email to"
++$136,matched,ho_mall_vs_wall_spend_ci;orders_at_2999;profit_m_30_0.01_cilow,,"nd +$547 against ""Womens email to everyone"" (+$136 to +$963). Holdout lifts"
++$963,matched,ho_mall_vs_wall_spend_ci,,"against ""Womens email to everyone"" (+$136 to +$963). Holdout lifts against "
+$0.80,matched,holdout_none_spend,,out's no-email group happened to spend more ($0.80 per customer against $0.
+$0.65,matched,spend_control,,ed to spend more ($0.80 per customer against $0.65 in the full no-email gro
+"$1,031",matched,train_value_rule,," that group. The rule's training-half value ($1,031 per 1,000) shrank 49% on"
+"1,000",matched,per_1000,,". The rule's training-half value ($1,031 per 1,000) shrank 49% on the holdo"
+49,matched,rule_shrinkage,,"raining-half value ($1,031 per 1,000) shrank 49% on the holdout ($525), "
+$525,matched,ho_rule_vs_none_spend;holdout_value_rule,,"$1,031 per 1,000) shrank 49% on the holdout ($525), the usual optimism of "
+$363,matched,ho_rule_vs_mall_spend_mde,,"comparison could only detect a difference of $363 per 1,000 (80% power), s"
+"1,000",matched,per_1000,,"n could only detect a difference of $363 per 1,000 (80% power), so it canno"
+80,matched,power,," only detect a difference of $363 per 1,000 (80% power), so it cannot ru"
+−$0.02,matched,ph_wo_mw_spend,," the two emails tie there (Mens minus Womens −$0.02 per customer, 95% CI −$0"
+95,matched,ci_level,,"here (Mens minus Womens −$0.02 per customer, 95% CI −$0.42 to +$0.39). R"
+−$0.42,matched,ph_wo_mw_spend_ci,,"ens minus Womens −$0.02 per customer, 95% CI −$0.42 to +$0.39). Repeating th"
++$0.39,matched,ph_wo_mw_spend_ci,,"Womens −$0.02 per customer, 95% CI −$0.42 to +$0.39). Repeating the whole sp"
+500,matched,robust_splits,,"g the whole split, learn and score procedure 500 times, the rule beat Wom"
+98,matched,robust_vs_w_pos,,"re 500 times, the rule beat Womens-to-all in 98% of splits but beat Mens"
+7,matched,robust_vs_m_pos,,"n 98% of splits but beat Mens-to-all in only 7% (mean −$47 per 1,000,  "
+−$47,matched,robust_vs_m_mean,,"splits but beat Mens-to-all in only 7% (mean −$47 per 1,000,   +$3). Both "
+"1,000",matched,per_1000,,"t beat Mens-to-all in only 7% (mean −$47 per 1,000,   +$3). Both emails rai"
++$3,matched,het_sig_holm;mw_spend_rel_ci;robust_vs_m_p95,,"ns-to-all in only 7% (mean −$47 per 1,000,   +$3). Both emails raised vis"
+19,matched,subgroup_levels;subgroups_ci_excl0_m_conversion;subgroups_ci_excl0_m_visit;subgroups_ci_excl0_w_visit,,"00,   +$3). Both emails raised visits in all 19 segments, and no segment"
+$0.65,matched,spend_control,,very send.** Customers buy without an email ($0.65 per customer in two week
+10,matched,het_sig_raw;planning_lift_10,," on pooled campaigns or much larger tests (a 10% spend lift needs 494,68"
+"494,680",matched,n_for_10pct_spend,,"or much larger tests (a 10% spend lift needs 494,680 customers per group). **"
+30,matched,margin_30,, per email (at CI low end) | |---|---|---| | 30% | $0.23 ($0.15) | $0.13
+$0.23,matched,breakeven_m_30,,mail (at CI low end) | |---|---|---| | 30% | $0.23 ($0.15) | $0.13 ($0.05) 
+$0.15,matched,breakeven_m_30_cilow;w_conversion_ci,,t CI low end) | |---|---|---| | 30% | $0.23 ($0.15) | $0.13 ($0.05) | | 40%
+$0.13,matched,breakeven_w_30,,end) | |---|---|---| | 30% | $0.23 ($0.15) | $0.13 ($0.05) | | 40% | $0.31 
+$0.05,matched,alpha;breakeven_w_30_cilow;max_estimate_move_visit,,|---|---|---| | 30% | $0.23 ($0.15) | $0.13 ($0.05) | | 40% | $0.31 ($0.19)
+40,matched,margin_40,,-| | 30% | $0.23 ($0.15) | $0.13 ($0.05) | | 40% | $0.31 ($0.19) | $0.17
+$0.31,matched,breakeven_m_40;ols_estimate_conversion_w;unadj_estimate_conversion_w;w_conversion_lift,,0% | $0.23 ($0.15) | $0.13 ($0.05) | | 40% | $0.31 ($0.19) | $0.17 ($0.07) 
+$0.19,matched,breakeven_m_40_cilow,,.23 ($0.15) | $0.13 ($0.05) | | 40% | $0.31 ($0.19) | $0.17 ($0.07) | | 50%
+$0.17,matched,breakeven_w_40;mw_conversion_ci;w_spend_ci;w_spend_welch_ci,,5) | $0.13 ($0.05) | | 40% | $0.31 ($0.19) | $0.17 ($0.07) | | 50% | $0.38 
+$0.07,matched,breakeven_w_40_cilow;ph_mo_mw_spend_ci,,.13 ($0.05) | | 40% | $0.31 ($0.19) | $0.17 ($0.07) | | 50% | $0.38 ($0.24)
+50,matched,margin_50;w_visit_rel_ci,, | | 40% | $0.31 ($0.19) | $0.17 ($0.07) | | 50% | $0.38 ($0.24) | $0.21
+$0.38,matched,breakeven_m_50,,0% | $0.31 ($0.19) | $0.17 ($0.07) | | 50% | $0.38 ($0.24) | $0.21 ($0.09) 
+$0.24,matched,breakeven_m_50_cilow,,.31 ($0.19) | $0.17 ($0.07) | | 50% | $0.38 ($0.24) | $0.21 ($0.09) |  Even
+$0.21,matched,breakeven_w_50,,9) | $0.17 ($0.07) | | 50% | $0.38 ($0.24) | $0.21 ($0.09) |  Even at an as
+$0.09,matched,breakeven_w_50_cilow,,.17 ($0.07) | | 50% | $0.38 ($0.24) | $0.21 ($0.09) |  Even at an assumed $
+$0.10,matched,cost_0.1,,$0.24) | $0.21 ($0.09) |  Even at an assumed $0.10 per email and a 30% marg
+30,matched,margin_30,," |  Even at an assumed $0.10 per email and a 30% margin, the Mens email'"
++$46,matched,profit_m_30_0.1_cilow,,"fit stays positive at the low end of its CI (+$46 per 1,000 customers); th"
+"1,000",matched,per_1000,," positive at the low end of its CI (+$46 per 1,000 customers); the Womens e"
+−$48,matched,profit_w_30_0.1_cilow,,"000 customers); the Womens email's does not (−$48). The full grid ($0.001,"
+$0.001,matched,cost_0.001;m_conversion_holm_p;m_spend_holm_p;m_visit_holm_p;mw_conversion_holm_p;mw_visit_holm_p;w_conversion_holm_p;w_visit_holm_p,,"mens email's does not (−$48). The full grid ($0.001, $0.01 and $0.10 per ema"
+$0.01,matched,cost_0.01;max_estimate_move_spend,,"il's does not (−$48). The full grid ($0.001, $0.01 and $0.10 per email) is "
+$0.10,matched,cost_0.1,,"not (−$48). The full grid ($0.001, $0.01 and $0.10 per email) is in [ ].  #"
+"10,000",matched,challenge_best_customers;n_boot,,"s t-test plus a bootstrap percentile CI with 10,000 resamples. Since 99.1% o"
+99.1,matched,zero_spend_share,,"p percentile CI with 10,000 resamples. Since 99.1% of spend values are zer"
+9,matched,halfwidth_visit_mens;ho_rule_vs_mall_visit_ci;holm_family_size;holm_significant;subgroups_ci_excl0_w_spend,,"le comparisons:** Holm-Bonferroni across the 9 main tests and, separate"
+54,matched,het_tests;w_conversion_rel,,"the 9 main tests and, separately, across the 54 heterogeneity tests. - *"
+2.80,matched,mde_multiplier,,e 54 heterogeneity tests. - **Power:** MDE = 2.80 × SE (two-sided α = 0.05
+0.05,matched,alpha;breakeven_w_30_cilow;max_estimate_move_visit,," - **Power:** MDE = 2.80 × SE (two-sided α = 0.05, 80% power). The design "
+80,matched,power,,"ower:** MDE = 2.80 × SE (two-sided α = 0.05, 80% power). The design MDE "
+"5,000",matched,n_boot_policy,,"n means, unbiased under randomization). CIs: 5,000 bootstrap resamples of t"
+20080320,matched,seed,, arm. Split: seeded random permutation (seed 20080320). A diagnostic file scor
+$499,matched,spend_max,,"ending more email. - **Spend looks capped at $499.** If so, the largest or"
+"6,562",matched,duplicate_rows,,"fects spend only). - **No customer ID.** The 6,562 exact duplicate rows are"
+500,matched,robust_splits,,hich used all customers. The holdout and the 500-split check guard agains
+"10,000",matched,challenge_best_customers;n_boot,,"stomers, which answers the challenge's ""best 10,000 customers"" question; a f"
